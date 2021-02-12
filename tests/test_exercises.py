@@ -10,11 +10,11 @@ class TestExercise(unittest.TestCase):
     def test_reverse_list(self):
         expected = [5, 4, 3, 2, 1]
         actual = reverse_list([1, 2, 3, 4, 5])
-        self.assertEqual(expected, actual)
+        self.assertListEqual(expected, list(actual))
 
         expected = [6, 5, 4, 3, 2, 1]
         actual = reverse_list([1, 2, 3, 4, 5, 6])
-        self.assertEqual(expected, actual) 
+        self.assertEqual(expected, actual)
 
     def test_count_digits(self):
         number = 123
